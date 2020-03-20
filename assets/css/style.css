@@ -5,11 +5,12 @@
 }
 
 /*-----Apply styling for semantic tags. In order of appearance (first to last)-----*/
-
+/*-----Body tag - used to contain the contents of the webpage-----*/
 body {
     background-color: #d9dcd6;
 }
 
+/*-----Nav tag - used to contain collection of navigation links-----*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -21,23 +22,26 @@ nav {
     margin-left: 25px;
 }
 
+/*-----li tag - used to contain links-----*/
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/*-----a tag - used to contain individual links-----*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/*-----p tag - used to contain paragraph text-----*/
 p {
     font-size: 16px;
 }
 
 
 /*-----Apply styling for classes-----*/
-
+/*-----header class - used to style the header tag-----*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -71,40 +75,24 @@ p {
     margin-left: 25px;
 }
 
+/*-----hero class - used to specify and style the image which sits between the header and main tags-----*/
 .hero {
-    height: 800px;
+    height: auto;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/*-----content class - used to style the main tag-----*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*-----search-engine-optimization class - used to style one article within the main tag-----*/
 .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -117,17 +105,23 @@ p {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+/*-----online-reputation-management class - used to style one article within the main tag-----*/
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
 }
 
 .online-reputation-management h2 {
@@ -135,11 +129,26 @@ p {
     font-size: 36px;
 }
 
+/*-----social-media-marketing class - used to style one article within the main tag-----*/
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/*-----float-left and float-right classes - used to float articles within in the main tag-----*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -150,6 +159,7 @@ p {
     margin-left: 25px;
 }
 
+/*-----benefits class - used to style the aside tag-----*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -161,17 +171,8 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
+/*-----benefit-* classes - used to style individual article tags in the aside tag-----*/
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -209,6 +210,7 @@ p {
     max-width: 150px;
 }
 
+/*-----footer class - used to style the footer tag-----*/
 .footer {
     padding: 30px;
     clear: both;
